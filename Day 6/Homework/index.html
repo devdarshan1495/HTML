@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padding & Margin Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fefefe;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .box {
+      padding: 16px;
+      background-color: #d9ead3;
+      margin-bottom: 16px;
+    }
+    .button {
+      padding: 12px 24px;
+      margin-right: 12px;
+    }
+    .highlight {
+      background-color: #f9cb9c;
+    }
+    .spaced {
+      margin-bottom: 32px;
+    }
+    .centered {
+      width: 180px;
+      margin: 0 auto;
+      background-color: #c9daf8;
+      padding: 12px;
+      text-align: center;
+    }
+    .flex-row {
+      display: flex;
+      gap: 12px;
+    }
+    .flex-space {
+      justify-content: space-between;
+    }
+    .column {
+      flex: 1 1 180px;
+      padding: 16px;
+    }
+    .layout1 { background: #ffd966; }
+    .layout2 { background: #b6d7a8; }
+    .layout3 { background: #a4c2f4; }
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      background: #fff2cc;
+    }
+    .flex-end {
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Padding Practice -->
+  <div class="box">Padding on all sides (16px)</div>
+  <div class="box" style="padding: 8px 24px;">Top/Bottom 8px, Left/Right 24px</div>
+
+  <!-- Buttons with Padding -->
+  <button class="button">Click Me</button>
+  <button class="button" style="padding: 16px 28px;">Click Me</button>
+
+  <!-- Uneven Padding -->
+  <div class="box highlight" style="padding-top: 24px; padding-left: 8px;">More top padding!</div>
+  <div class="box highlight" style="padding: 24px 8px 8px 0;">Padding on all sides</div>
+
+  <!-- Margin Practice -->
+  <div class="box" style="background: #f4cccc;">First box</div>
+  <div class="box" style="background: #ead1dc;">Second box</div>
+
+  <div class="box spaced" style="background: #f4cccc;">Extra bottom margin</div>
+  <div class="box" style="background: #ead1dc;">Second box</div>
+
+  <!-- Centered Box -->
+  <div class="centered">Centered Box</div>
+  <div class="centered" style="border: 2px solid #333;">Centered Box with border</div>
+
+  <!-- Margins Around Elements -->
+  <p class="box" style="margin: 24px;">Box with 24px margin</p>
+  <p class="box" style="margin: 24px 8px;">Margin: 24px top/bottom, 8px sides</p>
+
+  <!-- Horizontal Layouts -->
+  <div class="flex-row">
+    <div class="box layout1">Box 1</div>
+    <div class="box layout2">Box 2</div>
+  </div>
+
+  <div class="flex-row flex-space">
+    <div class="box layout1">Box 1</div>
+    <div class="box layout2">Box 2</div>
+    <div class="box layout3">Box 3</div>
+  </div>
+
+  <!-- Centering with Flex -->
+  <div class="flex-center">
+    <div class="box" style="margin: 0;">Centered</div>
+  </div>
+
+  <div class="flex-center flex-end">
+    <div class="box" style="margin: 0;">Bottom Aligned</div>
+  </div>
+
+  <!-- Responsive Columns -->
+  <div class="flex-row" style="flex-wrap: wrap;">
+    <div class="column layout1">Column 1</div>
+    <div class="column layout2">Column 2</div>
+    <div class="column layout3">Column 3</div>
+  </div>
+
+</body>
+</html>
 
