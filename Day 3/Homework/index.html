@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing Reminder - WattUp Energy</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .reminder-card {
+      background-color: #fff86a;
+      padding: 20px 25px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .reminder-title {
+      color: #d80000;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .reminder-title::before {
+      content: "⚠️ ";
+      font-size: 18px;
+    }
+
+    .reminder-text {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .due-date {
+      font-weight: bold;
+      font-size: 16px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="reminder-card">
+    <div class="reminder-title">Payment Due Reminder</div>
+    <div class="reminder-text">
+      Your electricity bill is due soon. Please make sure to pay to avoid service interruption.
+    </div>
+    <div class="due-date">Due Date: April 25, 2025</div>
+  </div>
+</body>
+</html>
