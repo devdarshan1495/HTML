@@ -66,6 +66,13 @@
     .submit-btn:hover {
       background-color: #45a049;
     }
+    section{
+      background: white;
+      padding: 20px 30px;
+      border-radius: 4px;
+      border: 0.5px rgb(50, 50, 50) solid;
+
+    }
   </style>
 </head>
 <body>
@@ -102,7 +109,10 @@
     </label>
 
     <label for="resume">Upload Resume:</label><br>
-    <input type="file" id="resume" name="resume">
+    <section>
+        <input type="file" id="resume" name="resume">
+    </section>
+    
 
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
