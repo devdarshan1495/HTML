@@ -1,156 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        input[type="text"], input[type="email"], input[type="password"] {
-            padding: 10px;
-            margin: 5px;
-            width: 100%;
-            border: 1px solid #ccc;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
+    <head>
 
-    <!-- Task 1 Basic Form Structure -->
-    <form action="/submit" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+    </head>
+    <body>
+        <!-- Task 1 Basic Form Structure-->
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" required></textarea><br>
+          
+            <button type="submit">Submit</button>
+          </form><br><br>
+          
+        <!-- Task 2 Input Fields – Text, Password, and Email-->
 
-        <label for="contact-email">Email:</label>
-        <input type="email" id="contact-email" name="email" required><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br>
-
-        <button type="submit">Submit</button>
-    </form><br><br>
-
-    <!-- Task 2 Input Fields – Text, Password, and Email -->
-    <form action="/user_info" method="POST">
-        <label for="username1">Username:</label>
-        <input type="text" id="username1" name="username" required><br>
-
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br>
+        <label for="email">Email:
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Task 3 Checkbox and Radio Buttons-->
 
-        <label for="email1">Email:</label>
-        <input type="email" id="email1" name="email" required><br><br>
-    </form>
-
-    <!-- Task 3 Checkbox and Radio Buttons -->
-    <form action="/preferences" method="POST">
         <label for="subscribe">Subscribe to newsletter:</label>
         <input type="checkbox" id="subscribe" name="subscribe"><br>
 
-        <label>Choose your favorite color:</label><br>
-        <input type="radio" id="red" name="color" value="red">
-        <label for="red">Red</label><br>
-
+        <label>Choose your favorite color:</label>
+        <input type="radio" id="red" name="color" value="red"><br>
+        <label for="red">Red</label>
         <input type="radio" id="blue" name="color" value="blue">
         <label for="blue">Blue</label><br><br>
-    </form>
 
-    <!-- Task 4 Dropdown -->
-    <form action="/city_selection" method="POST">
+        <!-- Task 4 -->
+
         <label for="city">Select your city:</label>
         <select id="city" name="city">
-            <option value="nyc">New York</option>
-            <option value="la">Los Angeles</option>
-            <option value="sf">San Francisco</option>
+          <option value="nyc">New York</option>
+          <option value="la">Los Angeles</option>
+          <option value="sf">San Francisco</option>
         </select><br><br>
-    </form>
 
-    <!-- Task 5 Textarea -->
-    <form action="/comments" method="POST">
+        <!-- Task 5 Textarea (Multi-line Text Input)-->
+
         <label for="comments">Comments:</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-    </form>
 
-    <!-- Task 6 File Upload -->
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="resume">Upload your resume:</label>
-        <input type="file" id="resume" name="resume"><br><br>
-    </form>
+        <!-- Task 6 File Upload -->
 
-    <!-- Task 7 Button Types -->
-    <form action="/buttons" method="POST">
+        <label for="file">Upload your resume:</label>
+        <input type="file" id="file" name="resume"><br><br>
+
+        <!-- Task 7 Button Types (Submit, Reset, and Custom) -->
+        
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
         <button type="button" onclick="alert('Hello!')">Click Me</button><br><br>
-    </form>
 
-    <!-- Task 8 Grouping Form Elements (Fieldset & Legend) -->
-    <form action="/personal_info" method="POST">
+        <!-- Task 8 Grouping Form Elements (Fieldset & Legend)-->
+
         <fieldset>
             <legend>Personal Information</legend>
-
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name"><br>
-
+            <input type="text" id="first-name" name="first-name">
             <label for="last-name">Last Name:</label>
             <input type="text" id="last-name" name="last-name">
         </fieldset><br><br>
-    </form>
+          
+        <!-- Task 9 Form Validation (Required, Pattern, Min/Max)-->
 
-    <!-- Task 9 Form Validation -->
-    <form action="/validation" method="POST">
-        <label for="username2">Username:</label> 
-        <input type="text" id="username2" name="username" required><br>
-
-        <label for="phone">Phone Number (format: 123-456-7890):</label>
-        <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required><br>
-
+        <label for="username">Username:</label> 
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required>
+        <br>
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" min="18" max="100" required><br><br>
-    </form>
 
-    <!-- Task 10 Form Submission -->
-    <form action="submit_form.php" method="POST">
-        <label for="email2">Email:</label>
-        <input type="email" id="email2" name="email" required>
-        <button type="submit">Submit</button>
-    </form><br><br>
 
-    <!-- Task 11 Multiple Forms on 1 Page -->
-    <form action="login.php" method="POST">
-        <label for="login-email">Login Email:</label>
-        <input type="email" id="login-email" name="email" required>
-        <button type="submit">Login</button>
-    </form><br>
+        <!-- Task 10 -->
+        <form action="submit_form.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+          </form>
+          
+        <!-- Task 11 Multiple forms on 1 page-->
+        <form action="login.php" method="POST">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <button type="submit">Login</button>
+          </form>
+          
+          <form action="register.php" method="POST">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            <button type="submit">Register</button>
+          </form>
 
-    <form action="register.php" method="POST">
-        <label for="register-email">Register Email:</label>
-        <input type="email" id="register-email" name="email" required>
-        <button type="submit">Register</button>
-    </form><br><br>
+        <!--Task 12 <input type="hidden" name="user_id" value="12345"> -->
 
-    <!-- Task 12 Hidden Input -->
-    <form action="/hidden" method="POST">
         <input type="hidden" name="user_id" value="12345">
-    </form><br><br>
 
-    <!-- Task 14 JavaScript Form Submission -->
-    <form id="myForm" action="/custom_submit" method="POST">
-        <input type="text" name="username" id="username3" required>
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
+        <!-- Takķ 13 -->
 
-    <script>
-        function submitForm() {
-            document.getElementById("myForm").submit();
-        }
-    </script>
+        <style>
+            input[type="text"], input[type="email"], input[type="password"] {
+              padding: 10px;
+              margin: 5px;
+              width: 100%;
+              border: 1px solid #ccc;
+            }
+            button {
+              padding: 10px 20px;
+              background-color: #4CAF50;
+              color: white;
+              border: none;
+              cursor: pointer;
+            }
+            button:hover {
+              background-color: #45a049;
+            }
+          </style>
+          
+        <!-- Task 14 -->
 
-</body>
+        <form id="myForm">
+            <input type="text" name="username" id="username" required>
+            <button type="button" onclick="submitForm()">Submit</button>
+          </form>
+          
+          <script>
+            function submitForm() {
+              document.getElementById("myForm").submit();
+            }
+          </script>
+
+    </body>
 </html>
