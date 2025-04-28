@@ -1,0 +1,26 @@
+.layout {
+    display: flex;
+    min-height: 300px;
+  }
+  
+  .sidebar {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .main-content {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+  
+    .sidebar, .main-content {
+      width: 100%;
+    }
+  }
+  
