@@ -1,0 +1,57 @@
+body{
+    border: 2px solid black;
+    border-radius: 50px ;
+    border-color: rgb(134, 102, 59);
+    margin: 20px;
+    padding: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div{
+    border:1px solid;
+    border-color: black;
+    border-radius: 25px; ;
+    box-shadow: 0 2px 4px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding:10px;
+}
+
+div:nth-child(2n+1){
+    color: rgb(78, 57, 54);
+    background-color: rgb(179, 184, 213);
+}
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.happy::before {
+    content: "😀 ";
+}
+  
+.meh::before {
+    content: "😐 ";
+}
+  
+.sad::before {
+    content: "😢 ";
+}
+.happy:hover::before {
+    content: "🥀 ";
+}
+p::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(134, 102, 59);
+}
+.like-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.like-button:active {
+    content: "💖";
+    transform: scale(1.3);
+}
