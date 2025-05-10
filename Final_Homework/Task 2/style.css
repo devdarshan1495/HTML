@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    background: #e0e0e0;
+    padding: 10px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+  }
+  
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: #ddd;
+  }
+  
+  .centered-box {
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .column-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .row-layout {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  .main {
+    flex: 3;
+    background: #eee;
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .push-right {
+    margin-left: auto;
+  }
+  
+  .vertical-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .box {
+    flex: 1;
+    background: #ddd;
+    padding: 20px;
+  }
+  
+  .grow-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .grow-more {
+    flex-grow: 2;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
